@@ -11,7 +11,7 @@ parser.add_argument(
 # parser.add_argument(
 #     "-v", "--verbosity", type=int, help="increase output verbosity", choices=[0, 1, 2])
 parser.add_argument(
-    "-v", "--verbosity", help="increase output verbosity", action="count")
+    "-v", "--verbosity", help="increase output verbosity", action="count", default=0)
 
 args = parser.parse_args()
 # print(args.echo)
