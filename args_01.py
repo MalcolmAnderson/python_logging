@@ -2,4 +2,8 @@
 
 import argparse
 parser = argparse.ArgumentParser()
-parser.parse_args()
+
+parser.add_argument("echo", help="echo the string you passed into the program")
+
+args = parser.parse_args()
+print(args.echo)
