@@ -8,8 +8,10 @@ parser.add_argument(
     "square", type=int, help="display a square of a given number")
 # parser.add_argument(
 #     "-v", "--verbose", help="increase output verbosity", action="store_true")
+# parser.add_argument(
+#     "-v", "--verbosity", type=int, help="increase output verbosity", choices=[0, 1, 2])
 parser.add_argument(
-    "-v", "--verbosity", type=int, help="increase output verbosity")
+    "-v", "--verbosity", help="increase output verbosity", action="count")
 
 args = parser.parse_args()
 # print(args.echo)
