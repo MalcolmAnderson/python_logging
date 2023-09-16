@@ -20,7 +20,7 @@ answer = args.square**2
 #     print(f"the square of {args.square} equals {answer}")
 # else :
 #     print(answer)
-if args.verbosity == 2:
+if args.verbosity >= 2:
     print(f"the square of {args.square} equals {answer}")
 elif args.verbosity == 1:
     print(f"{args.square}^2 == {answer}")
