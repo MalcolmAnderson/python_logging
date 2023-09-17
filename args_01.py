@@ -28,6 +28,14 @@ answer = args.x**args.y
 #     print(f"{args.square}^2 == {answer}")
 # else:
 #     print(answer)
+# if args.verbosity >= 2:
+#     print(f"{args.x} to the power {args.y} equals {answer}")
+# elif args.verbosity == 1:
+#     print(f"{args.x}^{args.y} == {answer}")
+# else:
+#     print(answer)
+if args.verbosity >= 3:
+    print(f"Running '{__file__}")
 if args.verbosity >= 2:
     print(f"{args.x} to the power {args.y} equals {answer}")
 elif args.verbosity == 1:
